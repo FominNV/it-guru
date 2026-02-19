@@ -1,11 +1,10 @@
 import path from "path";
-import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src/"),
@@ -15,6 +14,14 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ["import", "legacy-js-api"],
+        additionalData: `@import "@styles/modules.scss";`,
+      },
+    },
   },
 });
 

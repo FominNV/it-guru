@@ -1,0 +1,52 @@
+@import "./normalize";
+@import "./typography";
+
+* {
+  font-family: $inter;
+}
+
+.ant-checkbox-wrapper {
+  .ant-checkbox {
+    width: 22px;
+    height: 22px;
+    border: 1px solid $color-border;
+    background-color: transparent;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &-checked {
+    .ant-checkbox {
+      background-color: $color-primary-dark;
+    }
+  }
+}
+
+.ant-btn.ant-btn-primary {
+  background-color: $color-primary;
+}
+
+.ant-pagination {
+  .ant-pagination {
+    border-radius: 22px;
+  }
+
+  .ant-pagination-item {
+    border-color: $color-bg-muted;
+
+    a {
+      color: $color-text-secondary;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+
+    a {
+      color: $color-white;
+    }
+  }
+}

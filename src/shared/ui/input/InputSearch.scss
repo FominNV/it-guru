@@ -1,0 +1,33 @@
+.input-search {
+  position: relative;
+
+  .ant-input,
+  .ant-btn {
+    height: 48px;
+    background-color: $color-bg-surface;
+
+    &:hover {
+      background-color: $color-bg-surface !important;
+    }
+  }
+
+  .ant-input {
+    @include inter-font;
+
+    padding: 20px 20px 4px;
+    font-size: 16px;
+  }
+
+  &__label {
+    @include inter-font;
+
+    position: absolute;
+    z-index: 5;
+    top: 4px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: $color-text-tertiary;
+    font-size: 13px;
+  }
+}

@@ -13,10 +13,6 @@
   "css.validate": false,
   "scss.validate": false,
   "stylelint.validate": ["css", "scss"],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "css.customData": [".vscode/tailwind.json"],
   "tailwindCSS.validate": true,
   "files.autoSaveDelay": 500,
   "typescript.tsdk": "node_modules/typescript/lib"

@@ -1,4 +1,6 @@
-import { createBrowserRouter, Navigate, type RouteObject } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
+import type { RouteObject } from "react-router";
+import { LandingPage } from "@/pages/landing";
 
 export const ROUTER_PATHS = {
   HOME: "/",
@@ -13,7 +15,7 @@ const routes: RouteObject[] = [
   },
   {
     path: ROUTER_PATHS.LANDING,
-    element: <div>Landing</div>,
+    element: <LandingPage />,
   },
   {
     path: ROUTER_PATHS.LOGIN,

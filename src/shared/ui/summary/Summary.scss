@@ -1,0 +1,17 @@
+.product-table__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  color: $color-text-secondary;
+  font-size: 13px;
+}
+
+.product-table__footer-summary {
+  white-space: nowrap;
+}
+
+.product-table__footer-summary-number {
+  color: $color-black;
+}
+

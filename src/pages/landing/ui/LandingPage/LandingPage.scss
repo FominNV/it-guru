@@ -1,0 +1,14 @@
+.landing-page {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: $color-white;
+
+  &__header-wrap {
+    padding: 20px 0 30px;
+    background-color: $color-bg-surface;
+  }
+
+  &__content {
+    padding: 32px 0 40px;
+  }
+}
