@@ -1,0 +1,14 @@
+.login-page {
+  display: flex;
+  width: 100%;
+  min-height: 100dvh;
+  align-items: center;
+  background-color: $color-bg-base;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+  }
+}
+
